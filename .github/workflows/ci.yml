@@ -17,6 +17,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Print Python version      # <-- NEW STEP
+        run: python --version
+
       - name: Run the app
         run: python app.py
 
